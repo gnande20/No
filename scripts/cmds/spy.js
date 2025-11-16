@@ -1,1 +1,216 @@
-const _0x3499fd=_0x1aea;(function(_0x59a268,_0x2a96e6){const _0x51846f=_0x1aea,_0x5962b2=_0x59a268();while(!![]){try{const _0xe4ec05=-parseInt(_0x51846f(0x1ac))/0x1+-parseInt(_0x51846f(0x162))/0x2*(parseInt(_0x51846f(0x152))/0x3)+parseInt(_0x51846f(0x19b))/0x4*(parseInt(_0x51846f(0x19e))/0x5)+-parseInt(_0x51846f(0x1b4))/0x6*(parseInt(_0x51846f(0x153))/0x7)+parseInt(_0x51846f(0x180))/0x8+-parseInt(_0x51846f(0x1a6))/0x9+parseInt(_0x51846f(0x1c2))/0xa;if(_0xe4ec05===_0x2a96e6)break;else _0x5962b2['push'](_0x5962b2['shift']());}catch(_0x54db44){_0x5962b2['push'](_0x5962b2['shift']());}}}(_0x2c19,0x1ff62));const axios=require(_0x3499fd(0x1a1)),fs=require('fs'),path=require('path'),{createCanvas,loadImage,registerFont}=require('canvas');function formatMoney(_0x120868){const _0x261fea=_0x3499fd,_0x2d27a0=['','K','M','B','T'];let _0x5bfe36=0x0;while(_0x120868>=0x3e8&&_0x5bfe36<_0x2d27a0['length']-0x1){_0x120868/=0x3e8,_0x5bfe36++;}return _0x120868[_0x261fea(0x193)](0x1)[_0x261fea(0x1c1)](/\.0$/,'')+_0x2d27a0[_0x5bfe36];}function _0x2c19(){const _0x4cefa0=['Saimx69x','28YutPEi','📈\x20XP\x20Rank','name','writeFileSync','trim','unsend','🏦\x20Money\x20Rank','left','Failed\x20to\x20download\x20font\x20','information','userID','getAvatarUrl','👤\x20','vanity','data','file','image/png','#00ffff','spy_card_','https://i.imgur.com/I3VsBEt.png','#2d003f','startsWith','facebook.com/','isBirthday','exports','sin','getUserInfo','restore','unlinkSync','closePath','1161336LaUyoz','#fff','join','🎂\x20Birthday','👧\x20Girl','gender','Failed\x20to\x20delete\x20temp\x20file:','existsSync','error','💬\x20Nickname','px\x20','🤷\x20Unknown','#AAAAAA','©️\x20Saimx69x','stroke','type','#ff99ff','get','findIndex','toFixed','getAll','fillStyle','User','drawImage','arraybuffer','moveTo','2.0','37216xIbaKD','getContext','shadowColor','140sDXcyI','🆔\x20UID','mentions','axios','money','location','family','fillRect','433854AtDLKh','createReadStream','exp','clip','width','center','241286UbJAXH','shadowBlur','reply','Japanese.ttf','textAlign','quadraticCurveTo','alternateName','🚻\x20Gender','20442IsZUYB','lineTo','Private','mkdirSync','#1a0033','.png','⚡\x20Generating\x20your\x20spy\x20card...','addColorStop','Displays\x20a\x20detailed,\x20neon-themed\x20user\x20information\x20card.\x20Use\x20by\x20mentioning\x20a\x20user,\x20replying\x20to\x20a\x20message,\x20or\x20providing\x20a\x20Facebook\x20UID.','measureText','#ff66ff','spy','💰\x20Money','replace','1230760rfQLcP','messageReply','cos','fillText','createLinearGradient','save','rgba(20,10,40,0.85)','16647WrNHYY','63BnqKTM','lineWidth','beginPath','senderID','🌐\x20Username','👦\x20Boy','all','🌍\x20Location','JapaneseFont','fill','⚠️\x20Apni\x20jake\x20spy\x20korte\x20chan\x20tar\x20**UID**\x20din,\x20mention\x20korun\x20(@),\x20ba\x20kono\x20messsage-e\x20reply\x20korun.','sort','length','fonts'];_0x2c19=function(){return _0x4cefa0;};return _0x2c19();}function getFontFamily(_0xecd8b5){const _0x2e3b4e=_0x3499fd;if(/[\u3040-\u30FF\u31F0-\u31FF\uFF65-\uFF9F\u4E00-\u9FFF]/['test'](_0xecd8b5))return _0x2e3b4e(0x15b);return'JapaneseFont';}async function loadFonts(_0x28049e){const _0x426ac1=_0x3499fd,_0x54a4ab=path['join'](_0x28049e,_0x426ac1(0x160));if(!fs[_0x426ac1(0x187)](_0x54a4ab))fs[_0x426ac1(0x1b7)](_0x54a4ab,{'recursive':!![]});const _0x2d8e3f=[{'url':'https://github.com/Saim12678/Saim/blob/154232a4ea1ea849f1374d00800f6817416a31f8/fonts/Gen%20Jyuu%20Gothic%20Monospace%20Bold.ttf?raw=true','file':_0x426ac1(0x1af),'family':'JapaneseFont'}];for(const _0x3c01c2 of _0x2d8e3f){const _0x70733d=path[_0x426ac1(0x182)](_0x54a4ab,_0x3c01c2[_0x426ac1(0x171)]);if(!fs[_0x426ac1(0x187)](_0x70733d))try{const _0x554c93=await axios[_0x426ac1(0x191)](_0x3c01c2['url'],{'responseType':_0x426ac1(0x198)});fs[_0x426ac1(0x165)](_0x70733d,_0x554c93[_0x426ac1(0x170)]);}catch(_0x2acebf){console[_0x426ac1(0x188)](_0x426ac1(0x16a)+_0x3c01c2[_0x426ac1(0x171)]+':',_0x2acebf['message']);}fs[_0x426ac1(0x187)](_0x70733d)&&registerFont(_0x70733d,{'family':_0x3c01c2[_0x426ac1(0x1a4)]});}}function _0x1aea(_0x43a1fb,_0x50ce63){const _0x2c1979=_0x2c19();return _0x1aea=function(_0x1aea51,_0xef9df5){_0x1aea51=_0x1aea51-0x14e;let _0x286329=_0x2c1979[_0x1aea51];return _0x286329;},_0x1aea(_0x43a1fb,_0x50ce63);}function drawText(_0x3b86cb,_0x36df7a,_0x5cc007,_0x3a9c6a,_0xe4869,_0x4b9090=_0x3499fd(0x181),_0x281af0='left',_0x2b2336=null){const _0xd809c8=_0x3499fd,_0x148626=getFontFamily(_0x36df7a);_0x3b86cb['font']=_0xe4869+_0xd809c8(0x18a)+_0x148626,_0x3b86cb[_0xd809c8(0x1b0)]=_0x281af0,_0x3b86cb[_0xd809c8(0x195)]=_0x4b9090,_0x2b2336?(_0x3b86cb[_0xd809c8(0x19d)]=_0x2b2336,_0x3b86cb[_0xd809c8(0x1ad)]=0xc):_0x3b86cb[_0xd809c8(0x19d)]='transparent',_0x3b86cb[_0xd809c8(0x14e)](_0x36df7a,_0x5cc007,_0x3a9c6a);}function drawHex(_0xcf5c12,_0xee11a4,_0x2fc1bd,_0x3cc6b0){const _0x4e3a46=_0x3499fd;_0xcf5c12[_0x4e3a46(0x155)]();for(let _0x396cbe=0x0;_0x396cbe<0x6;_0x396cbe++){const _0x4a2b29=Math['PI']/0x3*_0x396cbe-Math['PI']/0x6,_0x3f45af=_0xee11a4+_0x3cc6b0*Math[_0x4e3a46(0x1c4)](_0x4a2b29),_0x40e8c3=_0x2fc1bd+_0x3cc6b0*Math[_0x4e3a46(0x17b)](_0x4a2b29);_0x396cbe===0x0?_0xcf5c12['moveTo'](_0x3f45af,_0x40e8c3):_0xcf5c12[_0x4e3a46(0x1b5)](_0x3f45af,_0x40e8c3);}_0xcf5c12[_0x4e3a46(0x17f)]();}function drawFrame(_0x54c28d,_0x45949c,_0x12f419,_0x4805fa,_0x4308f7,_0x33acf2,_0x5eff92){const _0x421788=_0x3499fd;_0x54c28d[_0x421788(0x150)](),_0x54c28d['strokeStyle']=_0x5eff92,_0x54c28d[_0x421788(0x154)]=0x4,_0x54c28d[_0x421788(0x19d)]=_0x5eff92,_0x54c28d[_0x421788(0x1ad)]=0x12,_0x54c28d[_0x421788(0x155)](),_0x54c28d[_0x421788(0x199)](_0x45949c+_0x33acf2,_0x12f419),_0x54c28d[_0x421788(0x1b5)](_0x45949c+_0x4805fa-_0x33acf2,_0x12f419),_0x54c28d[_0x421788(0x1b1)](_0x45949c+_0x4805fa,_0x12f419,_0x45949c+_0x4805fa,_0x12f419+_0x33acf2),_0x54c28d[_0x421788(0x1b5)](_0x45949c+_0x4805fa,_0x12f419+_0x4308f7-_0x33acf2),_0x54c28d['quadraticCurveTo'](_0x45949c+_0x4805fa,_0x12f419+_0x4308f7,_0x45949c+_0x4805fa-_0x33acf2,_0x12f419+_0x4308f7),_0x54c28d[_0x421788(0x1b5)](_0x45949c+_0x33acf2,_0x12f419+_0x4308f7),_0x54c28d[_0x421788(0x1b1)](_0x45949c,_0x12f419+_0x4308f7,_0x45949c,_0x12f419+_0x4308f7-_0x33acf2),_0x54c28d[_0x421788(0x1b5)](_0x45949c,_0x12f419+_0x33acf2),_0x54c28d[_0x421788(0x1b1)](_0x45949c,_0x12f419,_0x45949c+_0x33acf2,_0x12f419),_0x54c28d['closePath'](),_0x54c28d[_0x421788(0x18e)](),_0x54c28d['restore']();}async function createSpyCard(_0x4dcbe7,_0xb9e78f){const _0xaaa783=_0x3499fd;await loadFonts(_0xb9e78f);const {avatarUrl:_0x5a24a5,name:_0x2d04c2,uid:_0x3e11ce,username:_0x329ba7,gender:_0x401615,type:_0x19d944,birthday:_0x2fed8c,nickname:_0x28aa02,location:_0x4b0594,money:_0xbe540f,rank:_0x5b3d70,moneyRank:_0x38973d}=_0x4dcbe7,_0x124014=0x1ea,_0x5c59df=0x348,_0x3583fe=createCanvas(_0x124014,_0x5c59df),_0x25c4d8=_0x3583fe[_0xaaa783(0x19c)]('2d'),_0x3d3806=0x5a,_0x55b770=_0x124014/0x2,_0xfe591b=0x8c,_0x5b02f0=_0x25c4d8[_0xaaa783(0x14f)](0x0,0x0,_0x124014,_0x5c59df);_0x5b02f0[_0xaaa783(0x1bb)](0x0,_0xaaa783(0x1b8)),_0x5b02f0[_0xaaa783(0x1bb)](0.5,_0xaaa783(0x176)),_0x5b02f0[_0xaaa783(0x1bb)](0x1,'#40004c'),_0x25c4d8[_0xaaa783(0x195)]=_0x5b02f0,_0x25c4d8[_0xaaa783(0x1a5)](0x0,0x0,_0x124014,_0x5c59df),drawFrame(_0x25c4d8,0xa,0xa,_0x124014-0x14,_0x5c59df-0x14,0x1e,_0xaaa783(0x1be));let _0x19e276;try{_0x19e276=await loadImage(_0x5a24a5);}catch{_0x19e276=await loadImage(_0xaaa783(0x175));}_0x25c4d8[_0xaaa783(0x150)](),_0x25c4d8[_0xaaa783(0x19d)]=_0xaaa783(0x190),_0x25c4d8[_0xaaa783(0x1ad)]=0x14,drawHex(_0x25c4d8,_0x55b770,_0xfe591b,_0x3d3806+0x6),_0x25c4d8[_0xaaa783(0x15c)](),_0x25c4d8[_0xaaa783(0x17d)](),_0x25c4d8[_0xaaa783(0x150)](),drawHex(_0x25c4d8,_0x55b770,_0xfe591b,_0x3d3806),_0x25c4d8[_0xaaa783(0x1a9)](),_0x25c4d8[_0xaaa783(0x197)](_0x19e276,_0x55b770-_0x3d3806,_0xfe591b-_0x3d3806,_0x3d3806*0x2,_0x3d3806*0x2),_0x25c4d8[_0xaaa783(0x17d)](),drawText(_0x25c4d8,_0xaaa783(0x16e)+_0x2d04c2,_0x124014/0x2,_0xfe591b+_0x3d3806+0x3c,0x20,'#ff99ff',_0xaaa783(0x1ab),_0xaaa783(0x190));const _0x1f4cdc=_0xfe591b+_0x3d3806+0x64,_0x47fabe=0x24,_0x3eb2bb=_0x124014-0x3c,_0x3455df=[[_0xaaa783(0x19f),_0x3e11ce],[_0xaaa783(0x157),_0x329ba7[_0xaaa783(0x177)]('@')?_0x329ba7:'@'+_0x329ba7],[_0xaaa783(0x1b3),_0x401615],['🎓\x20Type',_0x19d944||'User'],[_0xaaa783(0x183),_0x2fed8c||_0xaaa783(0x1b6)],[_0xaaa783(0x189),_0x28aa02||_0x2d04c2],[_0xaaa783(0x15a),_0x4b0594||'Private'],[_0xaaa783(0x1c0),'$'+formatMoney(_0xbe540f)],[_0xaaa783(0x163),'#'+_0x5b3d70],[_0xaaa783(0x168),'#'+_0x38973d]];let _0x13aa23=_0x1f4cdc;for(let _0x55915f=0x0;_0x55915f<_0x3455df[_0xaaa783(0x15f)];_0x55915f++){const [_0x56db31,_0x3252c3]=_0x3455df[_0x55915f],_0x4843e5=0x1e;_0x25c4d8[_0xaaa783(0x195)]=_0xaaa783(0x151),_0x25c4d8[_0xaaa783(0x1a5)](_0x4843e5,_0x13aa23,_0x3eb2bb,_0x47fabe),drawText(_0x25c4d8,_0x56db31+':\x20',_0x4843e5+0xa,_0x13aa23+_0x47fabe/0x2+0x6,0x12,_0xaaa783(0x181),_0xaaa783(0x169));const _0x5d0a3b=_0x25c4d8[_0xaaa783(0x1bd)](_0x56db31+':\x20')[_0xaaa783(0x1aa)],_0x43c437=_0x55915f%0x2===0x0?_0xaaa783(0x173):_0xaaa783(0x1be);drawText(_0x25c4d8,_0x3252c3['toString'](),_0x4843e5+0xa+_0x5d0a3b,_0x13aa23+_0x47fabe/0x2+0x6,0x12,_0x43c437,_0xaaa783(0x169),_0x43c437),_0x13aa23+=_0x47fabe+0xc;}const _0xffffdd=_0xaaa783(0x18d),_0x5b956c=_0x13aa23+0xa;return drawText(_0x25c4d8,_0xffffdd,_0x124014/0x2,_0x5b956c,0x10,_0xaaa783(0x18c),_0xaaa783(0x1ab)),_0x3583fe['toBuffer'](_0xaaa783(0x172));}module[_0x3499fd(0x17a)]={'config':{'name':_0x3499fd(0x1bf),'version':_0x3499fd(0x19a),'role':0x0,'author':_0x3499fd(0x161),'category':_0x3499fd(0x16b),'description':_0x3499fd(0x1bc),'aliases':['userinfo'],'countDown':0x5},'onStart':async({api:_0x1de627,event:_0x33d5c7,message:_0x30c156,usersData:_0x55d508,args:_0x528b89})=>{const _0x375b80=_0x3499fd;try{let _0x4e1a5c;_0x528b89[0x0]&&!isNaN(_0x528b89[0x0])&&(_0x4e1a5c=_0x528b89[0x0]);!_0x4e1a5c&&_0x33d5c7[_0x375b80(0x1a0)]&&Object['keys'](_0x33d5c7[_0x375b80(0x1a0)])[_0x375b80(0x15f)]>0x0&&(_0x4e1a5c=Object['keys'](_0x33d5c7['mentions'])[0x0]);!_0x4e1a5c&&_0x33d5c7[_0x375b80(0x1c3)]?.[_0x375b80(0x156)]&&(_0x4e1a5c=_0x33d5c7[_0x375b80(0x1c3)][_0x375b80(0x156)]);!_0x4e1a5c&&(_0x4e1a5c=_0x33d5c7['senderID']);if(!_0x4e1a5c||isNaN(_0x4e1a5c))return _0x30c156[_0x375b80(0x1ae)](_0x375b80(0x15d));const _0x795a32=await _0x30c156['reply'](_0x375b80(0x1ba)),[_0x477e81,_0xc26b3b,_0x5f0b1e,_0x5ad489]=await Promise[_0x375b80(0x159)]([_0x1de627[_0x375b80(0x17c)](_0x4e1a5c),_0x55d508[_0x375b80(0x191)](_0x4e1a5c),_0x55d508[_0x375b80(0x16d)](_0x4e1a5c),_0x55d508[_0x375b80(0x194)]()]),_0x19d7a6=_0x477e81[_0x4e1a5c],_0x419214={0x1:_0x375b80(0x184),0x2:_0x375b80(0x158),0x0:_0x375b80(0x18b)},_0x58b881=typeof _0x19d7a6['alternateName']==='string'&&_0x19d7a6[_0x375b80(0x1b2)][_0x375b80(0x166)]()[_0x375b80(0x15f)]>0x0?_0x19d7a6['alternateName']['trim']():_0x19d7a6[_0x375b80(0x164)],_0x20ae0e=_0x19d7a6[_0x375b80(0x1a3)]?.[_0x375b80(0x164)]||_0x375b80(0x1b6),_0x17fab3=_0x5ad489[_0x375b80(0x15e)]((_0x2a4ac0,_0x18d0ca)=>_0x18d0ca[_0x375b80(0x1a8)]-_0x2a4ac0[_0x375b80(0x1a8)])[_0x375b80(0x192)](_0x4630d7=>_0x4630d7[_0x375b80(0x16c)]===_0x4e1a5c)+0x1,_0x360c0b=_0x5ad489[_0x375b80(0x15e)]((_0x18f790,_0x388a6d)=>_0x388a6d[_0x375b80(0x1a2)]-_0x18f790[_0x375b80(0x1a2)])[_0x375b80(0x192)](_0x51bb4c=>_0x51bb4c[_0x375b80(0x16c)]===_0x4e1a5c)+0x1,_0x5b6488=_0x19d7a6[_0x375b80(0x16f)]||_0x375b80(0x178)+_0x4e1a5c,_0xed66b5=path[_0x375b80(0x182)](__dirname,'cache');if(!fs[_0x375b80(0x187)](_0xed66b5))fs['mkdirSync'](_0xed66b5,{'recursive':!![]});const _0x57a90d=await createSpyCard({'avatarUrl':_0x5f0b1e,'name':_0x19d7a6[_0x375b80(0x164)],'uid':_0x4e1a5c,'username':_0x5b6488,'gender':_0x419214[_0x19d7a6[_0x375b80(0x185)]]||'Unknown','type':_0x19d7a6[_0x375b80(0x18f)]||_0x375b80(0x196),'birthday':_0x19d7a6[_0x375b80(0x179)]!==![]?_0x19d7a6['isBirthday']:'Private','nickname':_0x58b881,'location':_0x20ae0e,'money':_0xc26b3b[_0x375b80(0x1a2)],'rank':_0x17fab3,'moneyRank':_0x360c0b},_0xed66b5),_0x345d3d=path['join'](_0xed66b5,_0x375b80(0x174)+_0x4e1a5c+_0x375b80(0x1b9));return fs[_0x375b80(0x165)](_0x345d3d,_0x57a90d),await _0x30c156[_0x375b80(0x167)](_0x795a32['messageID']),_0x30c156['reply']({'attachment':fs[_0x375b80(0x1a7)](_0x345d3d)},()=>{const _0x35d30e=_0x375b80;try{fs[_0x35d30e(0x17e)](_0x345d3d);}catch(_0x42d9c9){console[_0x35d30e(0x188)](_0x35d30e(0x186),_0x42d9c9);}});}catch(_0x21e080){return console[_0x375b80(0x188)](_0x21e080),_0x30c156[_0x375b80(0x1ae)]('❌\x20Failed\x20to\x20generate\x20spy\x20card.\x20Please\x20try\x20again\x20later.');}}};
+const axios = require("axios");
+
+const baseApiUrl = "https://www.noobs-api.rf.gd/dipto";
+
+module.exports = {
+  config: {
+    name: "spy",
+    aliases: ["hackerspy"],
+    version: "1.2",
+    role: 0,
+    author: "Christus",
+    description: "Get user information and profile photo",
+    category: "information",
+    countDown: 10,
+  },
+
+  onStart: async function ({ event, message, usersData, api, args }) {
+    try {
+      // get caller id and mentioned id if any
+      const uid1 = event.senderID;
+      const uid2 =
+        event.mentions && Object.keys(event.mentions).length
+          ? Object.keys(event.mentions)[0]
+          : null;
+
+      // parse uid from args (plain id or profile.php?id=123)
+      let uid;
+      if (args && args[0]) {
+        if (/^\d+$/.test(args[0])) {
+          uid = args[0];
+        } else {
+          const match = args[0].match(/profile\.php\?id=(\d+)/);
+          if (match) uid = match[1];
+        }
+      }
+
+      // fallback to reply, mention, or self
+      if (!uid) {
+        uid =
+          event.type === "message_reply"
+            ? event.messageReply?.senderID
+            : uid2 || uid1;
+      }
+
+      // fetch remote "baby" data safely
+      let babyTeach = 0;
+      try {
+        const response = await axios.get(`${baseApiUrl}/baby?list=all`);
+        const dataa = response?.data || {};
+        babyTeach =
+          dataa?.teacher?.teacherList?.find((t) => t?.[uid])?.[uid] || 0;
+      } catch (e) {
+        babyTeach = 0;
+      }
+
+      // fetch user info and local db info
+      const userInfo = (await api.getUserInfo(uid)) || {};
+      const info = userInfo[uid] || {};
+
+      // avatar fallback
+      let avatarUrl = null;
+      try {
+        avatarUrl = (await usersData.getAvatarUrl(uid)) || null;
+      } catch (e) {
+        avatarUrl = null;
+      }
+
+      if (!avatarUrl) {
+        avatarUrl = "https://i.imgur.com/TPHk4Qu.png"; // placeholder
+      }
+
+      // gender text mapping with neutral default
+      let genderText = "⚧️ Unknown";
+      switch (info.gender) {
+        case 1:
+          genderText = "👩 Female";
+          break;
+        case 2:
+          genderText = "👨 Male";
+          break;
+        default:
+          genderText = "⚧️ Unknown";
+      }
+
+      // local usersData record (money, exp, etc.)
+      const userRecord = (await usersData.get(uid)) || {};
+      const money = Number(userRecord.money || 0);
+      const exp = Number(userRecord.exp || 0);
+      const allUser = (await usersData.getAll()) || [];
+
+      // ranks (safe)
+      const rank =
+        allUser.length > 0
+          ? allUser
+              .slice()
+              .sort((a, b) => (b.exp || 0) - (a.exp || 0))
+              .findIndex((u) => String(u.userID) === String(uid)) + 1
+          : 0;
+      const moneyRank =
+        allUser.length > 0
+          ? allUser
+              .slice()
+              .sort((a, b) => (b.money || 0) - (a.money || 0))
+              .findIndex((u) => String(u.userID) === String(uid)) + 1
+          : 0;
+
+      // profile / account status info from API
+      const accountType = info.type ? String(info.type).toUpperCase() : "User";
+      const isFriend = info.isFriend ? "✅ Yes" : "❌ No";
+      const isBirthday =
+        typeof info.isBirthday !== "undefined" && info.isBirthday !== false
+          ? info.isBirthday
+          : "Private";
+
+      // try to get thread/group info if available
+      let threadInfo = {};
+      try {
+        if (event.isGroup && event.threadID) {
+          threadInfo = (await api.getThreadInfo(event.threadID)) || {};
+        }
+      } catch (e) {
+        threadInfo = {};
+      }
+
+      // format date/time in Africa/Abidjan
+      const now = new Date();
+      const localeOpts = {
+        timeZone: "Africa/Abidjan",
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+      };
+      const reportDate = new Intl.DateTimeFormat("en-GB", localeOpts).format(
+        now
+      );
+
+      // build the formatted message to match the example layout
+      const userInformation = [
+        "𝐒𝐏𝐘",
+        "━━━━━━━━━━━━",
+        "",
+        "👤 𝐏𝐄𝐑𝐒𝐎𝐍𝐀𝐋 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍",
+        `📝 𝖥𝗎𝗅𝗅 𝖭𝖺𝗆𝖾: ${info?.name || userRecord?.name || "Unknown"}`,
+        `👤 𝖥𝗂𝗋𝗌𝗍 𝖭𝖺𝗆𝖾: ${extractFirstName(info?.name || userRecord?.name)}`,
+        `👥 𝖫𝖺𝗌𝗍 𝖭𝖺𝗆𝖾: ${extractLastName(info?.name || userRecord?.name)}`,
+        `🆔 𝖴𝗌𝖾𝗋 𝖨𝖣: ${uid}`,
+        `⚧️ 𝖦𝖾𝗇𝖽𝖾𝗋: ${genderText}`,
+        `🔗 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾: ${info?.vanity || "Not set"}`,
+        `🎂 𝖡𝗂𝗋𝗍𝗁𝖽𝖺𝗒: ${isBirthday}`,
+        `🌐 𝖯𝗋𝗈𝖿𝗂𝗅𝖾 𝖴𝖱𝖫: ${info?.profileUrl || "Not available"}`,
+        "",
+        "📱 𝐀𝐂𝐂𝐎𝐔𝐍𝐓 𝐒𝐓𝐀𝐓𝐔𝐒",
+        `🏷️ 𝖠𝖼𝖼𝗈𝗎𝗇𝗍 𝖳𝗒𝗉𝖾: ${accountType}`,
+        `✅ 𝖵𝖾𝗋𝗂𝖿𝗂𝖼𝖺𝗍𝗂𝖔𝗇: ${info?.is_verified ? "✅ Verified" : "❌ Not verified"}`,
+        `👥 𝖥𝗋𝗂𝖾𝗇𝖽𝗌𝗁𝗂𝗉: ${isFriend}`,
+        `🚫 𝖡𝖺𝗇𝗻𝖾𝖽: ${info?.is_suspended ? "✅ Yes" : "✅ No"}`,
+        "",
+        "🤖 𝐁𝐎𝐓 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄",
+        `📅 𝖥𝗂𝗋𝗌𝗍 𝖩𝗈𝗂𝗇𝖾𝖽: ${userRecord?.firstJoin || "Unknown"}`,
+        `🔄 𝖫𝖺𝗌𝗍 𝖴𝗉𝖽𝖺𝗍𝖾: ${userRecord?.lastUpdate || reportDate}`,
+        `💰 𝖡𝖺𝗅𝖺𝗇𝖼𝖾: ${formatMoney(money)}`,
+        `⭐ 𝖤𝗑𝗉𝖾𝗋𝗂𝖾𝗇𝖼𝖾: ${exp || 0} XP`,
+        `🎯 𝖫𝖾𝗏𝖾𝗅: ${userRecord?.level || "N/A"}`,
+        `📈 𝖭𝖾𝗑𝖙 𝖫𝖾𝗏𝖾𝗅: ${userRecord?.nextLevelXP || "N/A"}`,
+        "",
+        "💬 𝐆𝐑𝐎𝐔𝐏 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍",
+        `🏷️ 𝖭𝗂𝖼𝗄𝗇𝖺𝗆𝖾: ${threadInfo?.nicknames?.[uid] || "Not set"}`,
+        `📅 𝖩𝗈𝗂𝗇𝖾𝖽 𝖦𝗋𝗈𝗎𝗉: ${threadInfo?.participantIDs && threadInfo.participantIDs.includes(uid) ? "Joined" : "Unknown"}`,
+        `👑 𝖠𝖽𝗆𝗂𝗇 𝖲𝗍𝖺𝗍𝖚𝗌: ${threadInfo?.adminIDs && threadInfo.adminIDs.includes(uid) ? "✅ Admin" : "❌ Member"}`,
+        `💬 𝖬𝖾𝗌𝖲𝖺𝗀𝖾𝗌 𝖲𝖾𝗇𝗍: ${userRecord?.messages || 0}`,
+        `📍 𝖦𝗋𝗈𝗎𝗉 𝖭𝖺𝗆𝖾: ${threadInfo?.threadName || "Unknown"}`,
+        "",
+        "📊 𝐏𝐑𝐎𝐅𝐈𝐋𝐄 𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒",
+        `🌟 𝖯𝗋𝗈𝖿𝗂𝗅𝖾 𝖲𝖼𝗈𝗋𝖾: ${userRecord?.profileScore || "N/A"}`,
+        `🏆 𝖴𝗌𝖾𝗋 𝖱𝖺𝗇𝗄: ${rank > 0 ? `#${rank}` : "Not ranked"}`,
+        `📈 𝖤𝖷𝖯 𝖱𝖺𝗇𝗄𝗂𝗇𝗀: ${userRecord?.expRank || "N/A"}`,
+        `💰 𝖬𝗈𝗇𝖾𝗒 𝖱𝖺𝗇𝗄𝗂𝗇𝗀: ${moneyRank > 0 ? `#${moneyRank}` : "Not ranked"}`,
+        `🕐 𝑅𝑒𝑝𝑜𝑟𝑡 𝐺𝑒𝑛𝑒𝑟𝑎𝑡𝑒𝑑: ${reportDate}`,
+      ].join("\n");
+
+      // send reply with avatar attachment
+      await message.reply({
+        body: userInformation,
+        attachment: await global.utils.getStreamFromURL(avatarUrl),
+      });
+    } catch (err) {
+      console.error("SPY command error:", err);
+      return message.reply("❌ An error occurred while fetching user info.");
+    }
+  },
+};
+
+// --- helpers ---
+function extractFirstName(full) {
+  if (!full) return "Unknown";
+  const parts = String(full).trim().split(/\s+/);
+  return parts[0] || "Unknown";
+}
+function extractLastName(full) {
+  if (!full) return "";
+  const parts = String(full).trim().split(/\s+/);
+  return parts.slice(1).join(" ") || "";
+}
+function formatMoney(num) {
+  num = Number(num) || 0;
+  const units = ["", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "N", "D"];
+  let unit = 0;
+  while (num >= 1000 && unit < units.length - 1) {
+    num /= 1000;
+    unit++;
+  }
+  return (Math.round(num * 10) / 10).toString().replace(/\.0$/, "") + units[unit];
+                        }
