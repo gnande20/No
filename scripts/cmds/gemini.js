@@ -69,7 +69,7 @@ const handleGeminiRequest = async (api, event, userInput, message) => {
 
 module.exports = {
   config: {
-    name: "gemini",
+    name: "gemini2",
     version: "1.0.0",
     author: "Christus",
     role: 0,
