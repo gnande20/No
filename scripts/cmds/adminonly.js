@@ -11,24 +11,24 @@ module.exports = {
 		countDown: 5,
 		role: 3,
 		description: {
-			vi: "bật/tắt chế độ chỉ admin mới có thể sử dụng bot",
-			en: "turn on/off only admin can use bot"
+			fr: "Activer ou désactiver le mode où seul l'admin peut utiliser le bot",
+			en: "Turn on/off only admin can use bot"
 		},
-		category: "owner",
+		category: "propriétaire",
 		guide: {
-			vi: "   {pn} [on | off]: bật/tắt chế độ chỉ admin mới có thể sử dụng bot"
-				+ "\n   {pn} noti [on | off]: bật/tắt thông báo khi người dùng không phải là admin sử dụng bot",
-			en: "   {pn} [on | off]: turn on/off the mode only admin can use bot"
-				+ "\n   {pn} noti [on | off]: turn on/off the notification when user is not admin use bot"
+			fr: "   {pn} [on | off] : activer/désactiver le mode où seul l'admin peut utiliser le bot"
+				+ "\n   {pn} noti [on | off] : activer/désactiver la notification quand un utilisateur non admin utilise le bot",
+			en: "   {pn} [on | off] : turn on/off the mode only admin can use bot"
+				+ "\n   {pn} noti [on | off] : turn on/off the notification when user is not admin use bot"
 		}
 	},
 
 	langs: {
-		vi: {
-			turnedOn: "Đã bật chế độ chỉ admin mới có thể sử dụng bot",
-			turnedOff: "Đã tắt chế độ chỉ admin mới có thể sử dụng bot",
-			turnedOnNoti: "Đã bật thông báo khi người dùng không phải là admin sử dụng bot",
-			turnedOffNoti: "Đã tắt thông báo khi người dùng không phải là admin sử dụng bot"
+		fr: {
+			turnedOn: "✅ Mode 'seul l'admin peut utiliser le bot' activé",
+			turnedOff: "✅ Mode 'seul l'admin peut utiliser le bot' désactivé",
+			turnedOnNoti: "✅ Notifications activées pour les utilisateurs non admin",
+			turnedOffNoti: "✅ Notifications désactivées pour les utilisateurs non admin"
 		},
 		en: {
 			turnedOn: "Turned on the mode only admin can use bot",
@@ -43,23 +43,19 @@ module.exports = {
 		let value;
 		let indexGetVal = 0;
 
-		if (args[0] == "noti") {
+		if (args[0] === "noti") {
 			isSetNoti = true;
 			indexGetVal = 1;
 		}
 
-		if (args[indexGetVal] == "on")
-			value = true;
-		else if (args[indexGetVal] == "off")
-			value = false;
-		else
-			return message.SyntaxError();
+		if (args[indexGetVal] === "on") value = true;
+		else if (args[indexGetVal] === "off") value = false;
+		else return message.SyntaxError();
 
 		if (isSetNoti) {
 			config.hideNotiMessage.adminOnly = !value;
 			message.reply(getLang(value ? "turnedOnNoti" : "turnedOffNoti"));
-		}
-		else {
+		} else {
 			config.adminOnly.enable = value;
 			message.reply(getLang(value ? "turnedOn" : "turnedOff"));
 		}
