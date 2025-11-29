@@ -1,36 +1,38 @@
-const a = require('axios');
-const u = "http://65.109.80.126:20409/aryan/drive";
+const axios = require('axios');
+const apiUrl = "http://65.109.80.126:20409/aryan/drive";
 
 module.exports = {
   config: {
     name: "drive",
     version: "0.0.2",
-    author: "ArYAN",
+    author: "Christus",
     countDown: 5,
     role: 2,
-    description: "Upload videos to Google Drive easily!",
+    description: "Uploader facilement des vidéos sur Google Drive !",
     category: "utility",
-    guide: "Use: {pn} <link> to upload a video from a link\nOr reply to a video/message with media to upload"
+    guide: "Utilisation : {pn} <lien> pour uploader une vidéo depuis un lien\nOu répondre à un message avec média pour uploader"
   },
 
   onStart: async function ({ message, event, args }) {
-    const i = event?.messageReply?.attachments?.[0]?.url || args[0];
+    const mediaUrl = event?.messageReply?.attachments?.[0]?.url || args[0];
 
-    if (!i) return message.reply("⚠️ Please provide a valid video URL or reply to a media message.");
+    if (!mediaUrl)
+      return message.reply("⚠️ Merci de fournir un lien vidéo valide ou de répondre à un message contenant un média.");
 
     try {
-      const r = await a.get(`${u}?url=${encodeURIComponent(i)}`);
-      const d = r.data || {};
-      console.log("API response:", d);
+      const response = await axios.get(`${apiUrl}?url=${encodeURIComponent(mediaUrl)}`);
+      const data = response.data || {};
+      console.log("Réponse API :", data);
 
-      const l = d.driveLink || d.driveLIink;
-      if (l) return message.reply(`✅ File uploaded to Google Drive!\n\n🔗 URL: ${l}`);
+      const driveLink = data.driveLink || data.driveLIink;
+      if (driveLink) 
+        return message.reply(`✅ Fichier uploadé sur Google Drive avec succès !\n\n🔗 Lien : ${driveLink}`);
 
-      const e = d.error || JSON.stringify(d) || "❌ Failed to upload the file.";
-      return message.reply(`Upload failed: ${e}`);
-    } catch (e) {
-      console.error("Upload Error:", e.message || e);
-      return message.reply("❌ An error occurred during upload. Please try again later.");
+      const errorMsg = data.error || JSON.stringify(data) || "❌ Échec de l'upload du fichier.";
+      return message.reply(`Échec de l'upload : ${errorMsg}`);
+    } catch (err) {
+      console.error("Erreur d'upload :", err.message || err);
+      return message.reply("❌ Une erreur est survenue lors de l'upload. Merci de réessayer plus tard.");
     }
   }
 };
