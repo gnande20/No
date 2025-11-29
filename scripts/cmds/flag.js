@@ -6,22 +6,22 @@ async function toFont(text, id = 3) {
     const { data } = await axios.get(apiUrl);
     return data.output || text;
   } catch (e) {
-    console.error("Font API error:", e.message);
+    console.error("Erreur API Font :", e.message);
     return text;
   }
 }
 
 module.exports = {
   config: {
-    name: "flagquiz",
-    aliases: ["flag", "fqz", "flagguess"],
+    name: "quizdrapeau",
+    aliases: ["flag", "fqz", "devineflag"],
     version: "1.0",
-    author: "Saimx69x",
+    author: "Christus",
     countDown: 10,
     role: 0,
-    category: "game",
+    category: "jeu",
     guide: {
-      en: "{pn} — Flag guessing quiz"
+      fr: "{pn} — Quiz de devinette de drapeaux"
     }
   },
 
@@ -38,16 +38,16 @@ module.exports = {
         responseType: "stream"
       });
 
-      const body = await toFont(`》 Flag Quiz 🚩
+      const body = await toFont(`》 Quiz de Drapeau 🚩
 ━━━━━━━━━━━━━━
-📸 Guess the country of this flag!
+📸 Devinez le pays de ce drapeau !
 🅐 ${options.A}
 🅑 ${options.B}
 🅒 ${options.C}
 🅓 ${options.D}
 
-⏳ You have 1 minute 30 seconds!
-💡 You have 3 chances! Reply with A, B, C or D.`);
+⏳ Vous avez 1 minute 30 secondes !
+💡 Vous avez 3 essais ! Répondez avec A, B, C ou D.`);
 
       api.sendMessage(
         {
@@ -72,8 +72,8 @@ module.exports = {
             const quizData = global.GoatBot.onReply.get(info.messageID);
             if (quizData && !quizData.answered) {
               await api.unsendMessage(info.messageID);
-              const msg = await toFont(`⏰ Time's up!
-✅ The correct option was: ${answer}`);
+              const msg = await toFont(`⏰ Le temps est écoulé !
+✅ La bonne réponse était : ${answer}`);
               api.sendMessage(msg, event.threadID);
               global.GoatBot.onReply.delete(info.messageID);
             }
@@ -83,7 +83,7 @@ module.exports = {
       );
     } catch (err) {
       console.error(err);
-      const failMsg = await toFont("❌ Failed to fetch flag data.");
+      const failMsg = await toFont("❌ Échec lors de la récupération des données du drapeau.");
       api.sendMessage(failMsg, event.threadID, event.messageID);
     }
   },
@@ -93,12 +93,12 @@ module.exports = {
     const reply = event.body?.trim().toUpperCase();
 
     if (event.senderID !== author) {
-      const msg = await toFont("⚠️ This is not your quiz!");
+      const msg = await toFont("⚠️ Ce quiz n'est pas pour vous !");
       return api.sendMessage(msg, event.threadID, event.messageID);
     }
 
     if (!reply || !["A", "B", "C", "D"].includes(reply)) {
-      const msg = await toFont("❌ Please reply with A, B, C or D.");
+      const msg = await toFont("❌ Veuillez répondre avec A, B, C ou D.");
       return api.sendMessage(msg, event.threadID, event.messageID);
     }
 
@@ -112,13 +112,13 @@ module.exports = {
       userData.exp += rewardExp;
       await usersData.set(event.senderID, userData);
 
-      const correctMsg = await toFont(`🎉 Congratulations!
+      const correctMsg = await toFont(`🎉 Félicitations !
 
-✅ You answered correctly!
-💰 You earned ${rewardCoin} Coins
-🌟 You gained ${rewardExp} EXP
+✅ Vous avez répondu correctement !
+💰 Vous avez gagné ${rewardCoin} pièces
+🌟 Vous avez gagné ${rewardExp} EXP
 
-🚩 You recognized the right flag, you are the true champion!`);
+🚩 Vous avez reconnu le bon drapeau, vous êtes le vrai champion !`);
 
       if (global.GoatBot.onReply.has(messageID)) {
         global.GoatBot.onReply.get(messageID).answered = true;
@@ -135,13 +135,13 @@ module.exports = {
           chances
         });
 
-        const wrongTryMsg = await toFont(`❌ Wrong answer!
-⏳ You still have ${chances} chance(s) left. Try again!`);
+        const wrongTryMsg = await toFont(`❌ Mauvaise réponse !
+⏳ Il vous reste ${chances} essai(s). Réessayez !`);
         return api.sendMessage(wrongTryMsg, event.threadID, event.messageID);
       } else {
         await api.unsendMessage(messageID);
-        const wrongMsg = await toFont(`🥺 Out of chances!
-✅ The correct option was: ${correctAnswer}`);
+        const wrongMsg = await toFont(`🥺 Plus d'essais !
+✅ La bonne réponse était : ${correctAnswer}`);
         return api.sendMessage(wrongMsg, event.threadID, event.messageID);
       }
     }
