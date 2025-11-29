@@ -7,22 +7,19 @@ module.exports = {
     name: "imagen3",
     aliases: [],
     version: "1.0",
-    author: "Saimx69x (API by Renz)",
+    author: "Christus",
     countDown: 5,
     role: 0,
     description: {
-      en: "Generate an AI image using the Oculux Imagen3 API",
-      vi: "Tạo ảnh AI bằng Oculux Imagen3 API",
+      fr: "Génère une image IA en utilisant l'API Oculux Imagen3",
     },
-    category: "image generator",
+    category: "générateur d'images",
     guide: {
-      en: "{pn} <prompt>\nExample: ${prefix}imagen3 futuristic dragon flying in space",
-      vi: "{pn} <prompt>\nVí dụ: ${prefix}imagen3 futuristic dragon flying in space",
+      fr: "{pn} <prompt>\nExemple : ${prefix}imagen3 dragon futuriste volant dans l'espace",
     },
   },
 
   onStart: async function ({ message, event, args, api, commandName }) {
-    
     const prefix = global.utils?.getPrefix
       ? global.utils.getPrefix(event.threadID)
       : global.GoatBot?.config?.prefix || "/";
@@ -31,12 +28,12 @@ module.exports = {
 
     if (!prompt) {
       return message.reply(
-        `⚠️ Please provide a prompt.\nExample: ${prefix}${commandName} futuristic dragon flying in space`
+        `⚠️ Veuillez fournir un prompt.\nExemple : ${prefix}${commandName} dragon futuriste volant dans l'espace`
       );
     }
 
     api.setMessageReaction("🎨", event.messageID, () => {}, true);
-    const waitingMsg = await message.reply("🎨 Generating your Imagen3 image... Please wait...");
+    const waitingMsg = await message.reply("🎨 Génération de votre image Imagen3... Veuillez patienter...");
 
     const encodedPrompt = encodeURIComponent(prompt);
     const url = `https://dev.oculux.xyz/api/imagen3?prompt=${encodedPrompt}`;
@@ -48,7 +45,7 @@ module.exports = {
 
       await message.reply(
         {
-          body: `✅ Here is your generated ${commandName} image.`,
+          body: `✅ Voici votre image générée ${commandName}.`,
           attachment: fs.createReadStream(imgPath),
         },
         () => {
@@ -57,8 +54,8 @@ module.exports = {
         }
       );
     } catch (error) {
-      console.error("Imagen3 generation error:", error);
-      message.reply("⚠️ Failed to generate image. Please try again later.");
+      console.error("Erreur de génération Imagen3 :", error);
+      message.reply("⚠️ Échec de la génération de l'image. Veuillez réessayer plus tard.");
       if (waitingMsg?.messageID) api.unsendMessage(waitingMsg.messageID);
     }
   },
